@@ -11,3 +11,17 @@ export const deleteRestaurant = restaurantId => {
         payload: restaurantId
     }
 }
+
+export const addReview = review => (
+    {
+        type: 'ADD_REVIEW',
+        payload: review
+    }
+)
+
+export const deleteReview = reviewId => (
+    {
+        type: 'DELETE_REVIEW',
+        payload: reviewId
+    }
+)
